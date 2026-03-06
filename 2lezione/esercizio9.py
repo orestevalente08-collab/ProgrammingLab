@@ -1,13 +1,10 @@
 def dictionary():
     dic = {}
     with open("file.txt", 'r') as f:
-        line = f.split(' ')
-        for i in line:
-            c = 0
-            for j in line:
-                if (i == j):
-                    c += 1
-            dic[f"i"] = c
+        for line in f:
+            item = line.split(' ')
+            for i in item:
+                dic[i] = dic.get(i, 0) + 1
     return dic
 
 dic = dictionary()

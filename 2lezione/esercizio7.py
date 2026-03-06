@@ -1,10 +1,13 @@
 def somma():
-    with open("file.txt", 'r') as f:
+    with open("shampoo_sales.csv", 'r') as f:
         somma = 0
-        contenuto = f.read()
-        for line in contenuto:
+        for line in f:
             parola = line.split(',')
-            somma += float(parola)
+            for item in parola:
+                try:
+                    somma += float(item)
+                except ValueError:
+                    pass
     return somma
 
 print(somma())
