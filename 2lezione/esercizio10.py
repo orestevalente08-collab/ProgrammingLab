@@ -1,16 +1,16 @@
-def unique(file, new):
-    for i in file:
-        c = True
-        for j in file:
-            if (i == j):
-                c = False
-                break
-        if(c == True):
-            new = i
+def unique(new):
+    with open("file.txt", 'r') as f:
+        line = f.split(' ')
+        for i in line:
+            c = True
+            for j in line:
+                if (i == j):
+                    c = False
+                    break
+            if(c):
+                new.write(i)
 
-file = open('file.txt', 'r')
 new = open("unique.txt", 'x')
-unique(file.read(), new.write())
+unique(new)
 print(new)
-file.close()
 new.close()

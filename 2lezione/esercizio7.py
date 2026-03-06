@@ -1,9 +1,10 @@
-def somma(file):
-    somma = 0
-    for item in file:
-        somma += item
+def somma():
+    with open("file.txt", 'r') as f:
+        somma = 0
+        contenuto = f.read()
+        for line in contenuto:
+            parola = line.split(',')
+            somma += float(parola)
     return somma
 
-file = open('shampoo_sales.txt', 'r')
-print(somma(file.read()))
-file.close()
+print(somma())

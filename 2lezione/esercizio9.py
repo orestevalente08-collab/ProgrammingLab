@@ -1,14 +1,14 @@
-def dictionary(file):
+def dictionary():
     dic = {}
-    for i in file:
-        c = 0
-        for j in file:
-            if (i == j):
-                c += 1
-        dic[f"i"] = c
+    with open("file.txt", 'r') as f:
+        line = f.split(' ')
+        for i in line:
+            c = 0
+            for j in line:
+                if (i == j):
+                    c += 1
+            dic[f"i"] = c
     return dic
 
-file = open('file.txt', 'r')
-dic = dictionary(file.read())
+dic = dictionary()
 print(dic)
-file.close()

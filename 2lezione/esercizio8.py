@@ -1,11 +1,11 @@
-def counter(file, parola):
+def counter(parola):
     c = 0
-    for item in file:
-        if (item == parola):
-            c += 1
-    return c
+    with open("file.txt", 'r') as f:
+        line = f.split(" ")
+        for item in line:
+            if (item == parola):
+                c += 1
+        return c
 
-file = open('file.txt', 'r')
 parola = "ciao"
-print(counter(file.read(), parola))
-file.close()
+print(counter(parola))

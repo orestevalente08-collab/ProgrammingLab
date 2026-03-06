@@ -1,4 +1,4 @@
-def alfa(lista):
+def alfa(lista):    #era più giusto farlo con un dizionario
     parole = ["zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove"]
     for i, item in enumerate(lista):
         lista[i] = parole[item]
