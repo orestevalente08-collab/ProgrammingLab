@@ -48,7 +48,7 @@ class Docente(Persona):
 
     def add_corso(self, corso):
         self.corso.append(corso)
-
+    
     def saluta(self):
         Persona.saluta(self)
         print("> Docente del corso: ", self.corso)
