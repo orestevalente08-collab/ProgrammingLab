@@ -23,11 +23,10 @@ class Studente(Persona):
         print("> Frequento il corso: ", self.corso)
     
     def common_courses(self, Docente):
-        for cd in self.corso:
-            for cs in Docente.corso:
-                if cd == cs:
+                if self.corso == Docente.corso:
+                    return True
+                else:
                     return False
-        return True
     
     def active_courses(self, list_doc = None):
         if list_doc is None:
@@ -56,11 +55,12 @@ class Docente(Persona):
 corsi = ["Analisi", "Laboratorio", "Programmazione", "Geometria"]
 obj_Irene = Studente("Irene", "Rossi", corsi)
 obj_Irene.saluta()
-obj_DelSanto = Docente("Daniele", "Del Santo", "Analisi")
+obj_DelSanto = Docente("Daniele", "Del Santo", corsi)
+obj_Nenzi = Docente("Laura", "Nenzi", "Programmazione")
 
 if obj_Irene.common_courses(obj_DelSanto):
     print("Hanno gli stessi corsi\n")
 else:
     print("Non hanno gli stessi corsi\n")
 
-obj_Irene.active_courses([obj_DelSanto])
+obj_Irene.active_courses([obj_DelSanto, obj_Nenzi])
