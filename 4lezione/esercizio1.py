@@ -22,12 +22,6 @@ class Studente(Persona):
         Persona.saluta(self)
         print("> Frequento il corso: ", self.corso)
     
-    def common_courses(self, Docente):
-                if self.corso == Docente.corso:
-                    return True
-                else:
-                    return False
-    
     def active_courses(self, list_doc = None):
         if list_doc is None:
             list_doc = []
@@ -35,7 +29,7 @@ class Studente(Persona):
             list_doc = list_doc
         
         for doc in list_doc:
-            if self.common_courses(doc):
+            if doc.common_courses(self):
                 print("C'è un insegnante che insegna tutti i corsi")
             else:
                 print("Non c'è un insegnante che insegna tutti i corsi")
@@ -47,6 +41,17 @@ class Docente(Persona):
 
     def add_corso(self, corso):
         self.corso.append(corso)
+
+    def common_courses(self, studente):
+                sorted(self.corso)
+                sorted(studente.corso)
+                check = True
+                for i in self.corso:
+                    for j in studente.corso:
+                        if self.corso != studente.corso:
+                            check = False
+                            break
+                return check
     
     def saluta(self):
         Persona.saluta(self)
