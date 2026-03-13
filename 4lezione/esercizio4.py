@@ -3,14 +3,14 @@ class Poligono:
         self.lati = lati
     
     def __str__(self):
-        print(f"Sono un poligono con {self.lati} lati\n")
+        return f"Sono un poligono con {self.lati} lati"
     
 class Quadrilatero(Poligono):
     def __init__(self):
         super().__init__(4)
     
     def __str__(self):
-        print("Sono un quadrilatero\n")
+        return "Sono un quadrilatero"
     
 class Rettangolo(Quadrilatero):
     def __init__(self, base, altezza):
@@ -18,8 +18,7 @@ class Rettangolo(Quadrilatero):
         self.altezza = altezza
     
     def __str__(self):
-        super().__str__()
-        print("Sono un rettangolo\n")
+        return super().__str__() + "\nSono un rettangolo"
     
     def perimetro(self):
         return self.base*2 + self.altezza*2
