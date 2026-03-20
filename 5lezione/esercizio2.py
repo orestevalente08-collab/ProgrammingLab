@@ -13,8 +13,6 @@ class CSVFile:
         return som
     
 class NumericalCSVFile(CSVFile):
-    def __init__(self, name, contenuto):
-        super().__init__(name, contenuto)
 
     def get_data(self):
         som = super().get_data()
@@ -27,7 +25,7 @@ class NumericalCSVFile(CSVFile):
         return som
 
 file = NumericalCSVFile("file", " ")
-with open(r"C:\Users\orest\Documents\Programmazione\Python\ProgrammingLab\3lezione\shampoo_sales.csv") as f:
+with open(r"3lezione\shampoo_sales.csv") as f:
     file.write(f)
     a = file.get_data()
     print(a)
