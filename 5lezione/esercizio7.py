@@ -19,7 +19,8 @@ print("Menù:\n " \
 n = 0
 while(n != 1 and n!=  2 and n != 3):
     n = int(input("Inserisci la tua preferenza:"))
+    if (n == 1): somma(); n = 0
+    elif (n == 2): differenza(); n = 0
+    elif (n!=3): print("Il numero inserito non è valido, riprova\n")
 
-if (n == 1): somma()
-if (n == 2): differenza()
 print("The End\n")
