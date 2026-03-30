@@ -3,13 +3,16 @@ class CSVTimeSeriesFile:
         self.name = name
     
     def get_data(self):
-        with open(self.name, 'r') as f:
-            lines = []
-            f = f.readlines()[1:]
-            for line in f:
-                line = line.replace("-", ",")
-                lines.append(line.split(","))
-            return lines
+        try:
+            with open(self.name, 'r') as f:
+                lines = []
+                f = f.readlines()[1:]
+                for line in f:
+                    line = line.replace("-", ",")
+                    lines.append(line.split(","))
+                return lines
+        except FileNotFoundError:
+            print("Il file non esiste\n")
 
 def compute_variations(time_series, first_year, last_year):
     for line in time_series:
@@ -30,7 +33,7 @@ def compute_variations(time_series, first_year, last_year):
             sum = sum + line[2]
         somme.append(sum)
     try:
-        dic = {line[0] : (somme[idx]/12) - (somme[idx-1]/12) for idx, line in enumerate(time_series) if (line[0] >= first_year and line[0] <= last_year) }
+        dic = {line[0] : (somme[idx]/12) - (somme[idx-1]/12) for idx, line in enumerate(time_series) if(line[0] >= first_year and line[0] <= last_year)}
     except TypeError:
         print(line[0])
     return dic

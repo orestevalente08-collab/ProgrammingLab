@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 
 def today_calculation():
     today = str(datetime.now().date())
