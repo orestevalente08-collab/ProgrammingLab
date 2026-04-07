@@ -1,0 +1,84 @@
+2024-03-01 08:02:11 | INFO | avvio applicazione
+2024-03-01 08:02:45 | INFO | connessione al database stabilita
+2024-03-01 08:05:30 | DEBUG | caricamento configurazione completato
+2024-03-01 08:10:12 | INFO | server in ascolto sulla porta 8080
+2024-03-01 09:15:03 | DEBUG | richiesta ricevuta da 192.168.1.10
+2024-03-01 09:15:44 | INFO | utente mario.rossi autenticato
+2024-03-01 09:20:00 | WARNING | utilizzo memoria al 75%
+2024-03-01 09:20:00 | WARNING | utilizzo memoria al 75%
+2024-03-01 09:45:18 | DEBUG | richiesta ricevuta da 192.168.1.22
+2024-03-01 10:00:01 | INFO | backup giornaliero avviato
+questa riga non ha il formato giusto e va ignorata
+2024-03-01 10:00:55 | INFO | backup completato con successo
+2024-03-01 10:30:07 | WARNING | latenza di rete elevata: 320ms
+2024-03-01 10:30:07 | DEBUG | tentativo di riconnessione
+2024-03-01 11:00:00 | INFO | job schedulato avviato
+2024-03-01 11:00:34 | DEBUG | elaborazione batch record 1/500
+2024-03-01 11:01:02 | DEBUG | elaborazione batch record 100/500
+2024-03-01 11:01:28 | DEBUG | elaborazione batch record 200/500
+2024-03-01 11:01:55 | DEBUG | elaborazione batch record 300/500
+2024-03-01 11:02:10 | DEBUG | elaborazione batch record 400/500
+2024-03-01 11:02:33 | DEBUG | elaborazione batch record 500/500
+2024-03-01 11:02:40 | INFO | job schedulato completato
+2024-03-01 12:00:00 | INFO | controllo stato servizi
+2024-03-01 12:00:05 | INFO | servizio cache attivo
+2024-03-01 12:00:06 | INFO | servizio queue attivo
+2024-03-01 12:00:07 | INFO | servizio storage attivo
+2024-03-01 14:30:00 | ERROR | connessione al database persa
+2024-03-01 14:30:04 | ERROR | tentativo di riconnessione 1/3 fallito
+2024-03-01 14:30:08 | ERROR | tentativo di riconnessione 2/3 fallito
+2024-03-01 14:30:12 | ERROR | tentativo di riconnessione 3/3 fallito
+2024-03-01 14:30:15 | CRITICAL | database irraggiungibile, servizio degradato
+2024-03-01 14:30:18 | ERROR | richiesta fallita: timeout
+2024-03-01 14:30:20 | ERROR | richiesta fallita: timeout
+2024-03-01 14:30:22 | ERROR | richiesta fallita: timeout
+2024-03-01 14:30:25 | WARNING | coda richieste in attesa: 45 elementi
+2024-03-01 14:30:28 | ERROR | richiesta fallita: timeout
+2024-03-01 14:30:30 | ERROR | richiesta fallita: timeout
+2024-03-01 14:30:33 | INFO | connessione al database ripristinata
+2024-03-01 14:30:35 | INFO | smaltimento coda richieste in corso
+2024-03-01 14:31:00 | INFO | sistema tornato operativo
+2024-03-01 15:00:00 | DEBUG | richiesta ricevuta da 10.0.0.5
+solo testo senza separatori
+2024-03-01 15:00:44 | INFO | sessione utente luigi.bianchi aperta
+2024-03-01 15:10:22 | WARNING | certificato SSL in scadenza tra 7 giorni
+2024-03-01 | INFO | riga con timestamp incompleto va ignorata
+2024-03-01 16:00:00 | INFO | aggiornamento configurazione rilevato
+2024-03-01 16:00:30 | INFO | ricaricamento configurazione completato
+2024-03-01 17:30:00 | WARNING | utilizzo disco all 88%
+2024-03-01 17:30:45 | INFO | pulizia file temporanei avviata
+2024-03-01 17:31:10 | INFO | liberati 2.3 GB di spazio
+2024-03-01 18:00:00 | INFO | report giornaliero generato
+2024-03-01 18:00:01 | INFO | report inviato a admin@esempio.it
+2024-03-01 23:55:00 | DEBUG | controllo notturno avviato
+2024-03-01 23:55:10 | INFO | tutti i servizi operativi
+2024-03-01 23:55:20 | DEBUG | controllo notturno completato
+2024-03-02 00:00:00 | INFO | nuovo giorno iniziato
+2024-03-02 07:00:00 | INFO | avvio servizi mattutini
+2024-03-02 07:00:15 | INFO | cache svuotata e ricaricata
+2024-03-02 07:00:30 | DEBUG | indici database ricostruiti
+2024-03-02 09:00:00 | INFO | utente anna.verdi autenticata
+2024-03-02 09:45:00 | ERROR | errore imprevisto nel modulo pagamenti
+2024-03-02 09:45:03 | ERROR | transazione 8821 annullata
+2024-03-02 09:45:06 | CRITICAL | modulo pagamenti non disponibile
+2024-03-02 09:45:09 | ERROR | richiesta pagamento fallita
+2024-03-02 09:45:12 | ERROR | richiesta pagamento fallita
+2024-03-02 09:45:15 | ERROR | richiesta pagamento fallita
+2024-03-02 09:45:18 | ERROR | richiesta pagamento fallita
+2024-03-02 09:45:21 | ERROR | richiesta pagamento fallita
+2024-03-02 09:45:24 | WARNING | notifica inviata al team di supporto
+2024-03-02 09:46:00 | INFO | modulo pagamenti riavviato
+2024-03-02 09:46:30 | INFO | modulo pagamenti operativo
+2024-03-02 11:00:00 | INFO | manutenzione programmata tra 1 ora
+2024-03-02 12:00:00 | WARNING | avvio finestra di manutenzione
+2024-03-02 12:00:10 | INFO | connessioni in ingresso sospese
+2024-03-02 12:05:00 | INFO | aggiornamento pacchetti avviato
+2024-03-02 12:20:00 | INFO | aggiornamento completato
+2024-03-02 12:20:30 | INFO | riavvio servizi in corso
+2024-03-02 12:21:00 | INFO | tutti i servizi riavviati correttamente
+2024-03-02 12:21:30 | INFO | connessioni in ingresso ripristinate
+2024-03-02 12:21:35 | INFO | fine finestra di manutenzione
+2024-03-02 18:00:00 | INFO | report giornaliero generato
+2024-03-02 23:58:00 | DEBUG | controllo notturno avviato
+2024-03-02 23:58:20 | INFO | tutti i servizi operativi
+2024-03-02 23:58:30 | DEBUG | controllo notturno completato
