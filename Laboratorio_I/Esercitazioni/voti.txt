@@ -1,0 +1,41 @@
+matricola,nome,voto
+101234,Mario Rossi,28
+102345,Anna Bianchi,30L
+103456,Luigi Verdi,25
+104567,Giulia Esposito,17
+105678,Carlo Romano,22
+106789,Francesca Colombo,30
+107890,Antonio Ricci,19
+108901,Roberto Marino,30L
+109012,Sofia Conti,26
+110123,Davide Mancini,31
+111234,Elena Lombardi,24
+112345,Luca Barbieri,29
+113456,Chiara Gallo,
+114567,Marco Marini,27
+questa riga non ha il formato giusto
+115678,Valentina Greco,30L
+116789,Andrea Serra,21
+117890,Paola Rizzo,28
+118901,Giovanni Fontana,23
+119012,Martina Santoro,20
+120123,Simone Moretti,30
+121234,Federica Ferrari,26
+122345,Alessandro Ferretti,18
+123456,Beatrice Gatti,25
+124567,Matteo Bruno,30L
+125678,Laura Vitale,22
+126789,Stefano De Luca,27
+127890,Alessia Costa,19
+128901,Riccardo Russo,28
+129012,Serena Esposito,24
+101234,Mario Rossi,29
+abc123,Nome Cognome,25
+130123,Giorgio Ferraro,30
+131234,Elisa Marchetti,23
+132345,Davide Caruso,ventisei
+133456,Chiara Amato,21
+134567,Marco Greco,30L
+135678,Sara Longo,26
+136789,Francesco Silvestri,18
+137890,Valeria Cattaneo,28
