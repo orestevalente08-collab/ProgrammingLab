@@ -5,10 +5,12 @@ class CSVTimeSeriesFile:
     def get_data(self):
         try:
             with open(self.name, 'r') as f:
+                next(f)
                 lines = []
                 f = f.readlines()[1:]
                 for line in f:
                     line = line.replace("-", ",")
+                    line = line.strip()
                     lines.append(line.split(","))
                 return lines
         except FileNotFoundError:
