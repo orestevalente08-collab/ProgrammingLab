@@ -60,7 +60,7 @@ def compute_variations(time_series, first_year, last_year):
 
         if year == first_year: continue    #se siamo al primo ciclo non fa niente
 
-        variations[f"{current_year}-{year}"] = years[current_year] - years[year]    #calcola le variazioni
+        variations[f"{current_year}-{year}"] = years[year] - years[current_year]    #calcola le variazioni
         current_year = year
 
     return variations
